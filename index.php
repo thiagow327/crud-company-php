@@ -57,19 +57,19 @@
                 include("database.php");
                 switch (@$_REQUEST["page"]) {
                     case "new-user":
-                        include("models/new-user.php");
+                        include("views/new-user.php");
                         break;
                     case "view-users":
-                        include("models/view-users.php");
+                        include("views/view-users.php");
                         break;
                     case "new-sector":
-                        include("models/new-sector.php");
+                        include("views/new-sector.php");
                         break;
                     case "view-sectors":
-                        include("models/view-sectors.php");
+                        include("views/view-sectors.php");
                         break;
                     case "save":
-                        include("views/save-user.php");
+                        include("models/save-user.php");
                         break;
                     default:
                         print "<h1>Welcome</h1>";
