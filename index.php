@@ -48,6 +48,31 @@
             </div>
         </div>
     </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col mt-4">
+                <?php
+                switch (@$_REQUEST("page")) {
+                    case "new-user":
+                        include("new-user.php");
+                        break;
+                    case "view-users":
+                        include("view-users.php");
+                        break;
+                    case "new-sector":
+                        include("new-sector.php");
+                        break;
+                    case "view-sectors":
+                        include("view-sectors.php");
+                        break;
+                    default:
+                        print "Welcome";
+                }
+                ?>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-pzjw8t+4zLX7L3np8F9ltI5lb9sL06aOK6E7Ll5f7Iao00jMn5endoGZ5biSQtQ6" crossorigin="anonymous"></script>
 </body>
 
