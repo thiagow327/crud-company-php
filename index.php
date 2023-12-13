@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -54,6 +54,7 @@
         <div class="row">
             <div class="col mt-4">
                 <?php
+                include("database.php");
                 switch (@$_REQUEST["page"]) {
                     case "new-user":
                         include("models/new-user.php");
