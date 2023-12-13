@@ -68,6 +68,9 @@
                     case "view-sectors":
                         include("models/view-sectors.php");
                         break;
+                    case "save":
+                        include("views/save-user.php");
+                        break;
                     default:
                         print "<h1>Welcome</h1>";
                 }
