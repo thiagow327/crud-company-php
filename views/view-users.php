@@ -22,7 +22,9 @@ if ($qtd > 0) {
         print "<td>" . $row->name . "</td>";
         print "<td>" . $row->email . "</td>";
         print "<td>
-                    <button class='btn btn-secondary'>Edit</button>
+                    <button onclick=\"
+                        location.href='?page=edit&id=" . $row->id . "';\"
+                    class='btn btn-secondary'>Edit</button>
                     <button class='btn btn-danger'>Delete</button>
                 </td>";
         print "</tr>";

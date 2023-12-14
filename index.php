@@ -71,6 +71,9 @@
                     case "save":
                         include("models/save-user.php");
                         break;
+                    case "edit":
+                        include("models/edit_user.php");
+                        break;
                     default:
                         print "<h1>Welcome</h1>";
                 }
