@@ -25,7 +25,7 @@ if ($qtd > 0) {
                     class='btn btn-secondary'>Edit</button>
                     <button onclick=\"
                         if(confirm('The user will be deleted, do you want to proceed?')){
-                            location.href='?page=save-user&action=delete-sector&id=" . $row->id . "';
+                            location.href='?page=save-sector&action=delete-sector&id=" . $row->id . "';
                         }else{
                             false;
                         }\"

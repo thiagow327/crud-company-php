@@ -74,11 +74,11 @@
                     case "edit-user":
                         include("models/edit-user.php");
                         break;
-                    case "delete-user":
-                        include("models/delete-user.php");
-                        break;
                     case "save-sector":
                         include("models/save-sector.php");
+                        break;
+                    case "edit-sector":
+                        include("models/edit-sector.php");
                         break;
                     default:
                         print "<h1>Welcome</h1>";
