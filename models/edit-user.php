@@ -4,8 +4,8 @@ $sql = "SELECT * FROM users WHERE id=" . $_REQUEST["id"];
 $res = $conn->query($sql);
 $row = $res->fetch_object();
 ?>
-<form action="?page=save" method="POST">
-    <input type="hidden" name="action" value="edit">
+<form action="?page=save-user" method="POST">
+    <input type="hidden" name="action" value="edit-user">
     <input type="hidden" name="id" value="<?php print $row->id; ?>">
     <div class="mb-3">
         <label>Name</label>

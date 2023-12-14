@@ -1,6 +1,6 @@
 <h1>New User</h1>
-<form action="?page=save" method="POST">
-    <input type="hidden" name="action" value="create">
+<form action="?page=save-user" method="POST">
+    <input type="hidden" name="action" value="create-user">
     <div class="mb-3">
         <label>Name</label>
         <input type="text" name="name" class="form-control">

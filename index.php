@@ -68,14 +68,14 @@
                     case "view-sectors":
                         include("views/view-sectors.php");
                         break;
-                    case "save":
+                    case "save-user":
                         include("models/save-user.php");
                         break;
-                    case "edit":
-                        include("models/edit_user.php");
+                    case "edit-user":
+                        include("models/edit-user.php");
                         break;
-                    case "delete":
-                        include("models/delete_user.php");
+                    case "delete-user":
+                        include("models/delete-user.php");
                         break;
                     default:
                         print "<h1>Welcome</h1>";

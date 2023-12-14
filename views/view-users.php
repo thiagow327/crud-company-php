@@ -23,11 +23,11 @@ if ($qtd > 0) {
         print "<td>" . $row->email . "</td>";
         print "<td>
                     <button onclick=\"
-                        location.href='?page=edit&id=" . $row->id . "';\"
+                        location.href='?page=edit-user&id=" . $row->id . "';\"
                     class='btn btn-secondary'>Edit</button>
                     <button onclick=\"
                         if(confirm('The user will be deleted, do you want to proceed?')){
-                            location.href='?page=save&action=delete&id=" . $row->id . "';
+                            location.href='?page=save-user&action=delete-user&id=" . $row->id . "';
                         }else{
                             false;
                         }\"

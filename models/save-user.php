@@ -1,6 +1,6 @@
 <?php
 switch ($_REQUEST["action"]) {
-    case 'create':
+    case 'create-user':
         $name = $_POST["name"];
         $email = $_POST["email"];
 
@@ -17,7 +17,7 @@ switch ($_REQUEST["action"]) {
         }
         break;
 
-    case 'edit':
+    case 'edit-user':
         $name = $_POST["name"];
         $email = $_POST["email"];
         $id = $_REQUEST["id"];
@@ -39,7 +39,7 @@ switch ($_REQUEST["action"]) {
         }
         break;
 
-    case 'delete':
+    case 'delete-user':
         $sql = "DELETE FROM users WHERE id=" . $_REQUEST["id"];
 
         $res = $conn->query($sql);
