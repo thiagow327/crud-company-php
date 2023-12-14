@@ -74,6 +74,9 @@
                     case "edit":
                         include("models/edit_user.php");
                         break;
+                    case "delete":
+                        include("models/delete_user.php");
+                        break;
                     default:
                         print "<h1>Welcome</h1>";
                 }

@@ -25,7 +25,13 @@ if ($qtd > 0) {
                     <button onclick=\"
                         location.href='?page=edit&id=" . $row->id . "';\"
                     class='btn btn-secondary'>Edit</button>
-                    <button class='btn btn-danger'>Delete</button>
+                    <button onclick=\"
+                        if(confirm('The user will be deleted, do you want to proceed?')){
+                            location.href='?page=save&action=delete&id=" . $row->id . "';
+                        }else{
+                            false;
+                        }\"
+                     class='btn btn-danger'>Delete</button>
                 </td>";
         print "</tr>";
     }

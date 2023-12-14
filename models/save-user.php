@@ -40,6 +40,16 @@ switch ($_REQUEST["action"]) {
         break;
 
     case 'delete':
-        # code...
+        $sql = "DELETE FROM users WHERE id=" . $_REQUEST["id"];
+
+        $res = $conn->query($sql);
+
+        if ($res == true) {
+            print "<script>alert('User successfully delete');</script>";
+            print "<script>location.href='?page=view-users';</script>";
+        } else {
+            print "<script>alert('Unable to delete this user');</script>";
+            print "<script>location.href='?page=new-user';</script>";
+        }
         break;
 }
