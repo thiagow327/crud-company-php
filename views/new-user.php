@@ -11,7 +11,7 @@
     </div>
     <div class="mb-3">
         <label>Sector</label>
-        <select class="form-select" aria-label="Default select example">
+        <select class="form-select" name="sector" aria-label="Default select example">
             <?php
             $sql = "SELECT * FROM sectors";
 
